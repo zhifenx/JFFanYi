@@ -1,0 +1,3 @@
+target 'JFFanYi' do
+pod 'AFNetworking'
+end

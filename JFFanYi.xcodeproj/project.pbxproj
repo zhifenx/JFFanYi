@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E3264F51E97DEF200DF90FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3264F41E97DEF200DF90FA /* AppDelegate.m */; };
+		1E3264F81E97DEF300DF90FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3264F71E97DEF300DF90FA /* main.m */; };
+		1E3264FB1E97DEF300DF90FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3264FA1E97DEF300DF90FA /* ViewController.m */; };
+		1E3264FD1E97DEF300DF90FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3264FC1E97DEF300DF90FA /* Assets.xcassets */; };
+		1E3265001E97DEF300DF90FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3264FE1E97DEF300DF90FA /* Main.storyboard */; };
+		1E32650B1E97DEF300DF90FA /* JFFanYiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E32650A1E97DEF300DF90FA /* JFFanYiTests.m */; };
+		1E3265161E97DEF300DF90FA /* JFFanYiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3265151E97DEF300DF90FA /* JFFanYiUITests.m */; };
+		1E3265251E98676500DF90FA /* FYIViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3265241E98676500DF90FA /* FYIViewManager.m */; };
+		1E3265271E986B2700DF90FA /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 1E3265261E986B2700DF90FA /* PodFile */; };
+		1E32652A1E98A73F00DF90FA /* FYIServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3265291E98A73F00DF90FA /* FYIServiceManager.m */; };
+		1ED27FE31E9BCD2400E2287F /* NSString+FYIHumpString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED27FE21E9BCD2400E2287F /* NSString+FYIHumpString.m */; };
+		A5A70E2009D09D47D5703603 /* libPods-JFFanYi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A046387C9085DD950A3AB45 /* libPods-JFFanYi.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E3265071E97DEF300DF90FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E3264E81E97DEF200DF90FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E3264EF1E97DEF200DF90FA;
+			remoteInfo = JFFanYi;
+		};
+		1E3265121E97DEF300DF90FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E3264E81E97DEF200DF90FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E3264EF1E97DEF200DF90FA;
+			remoteInfo = JFFanYi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E3264F01E97DEF200DF90FA /* JFFanYi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFFanYi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3264F31E97DEF200DF90FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1E3264F41E97DEF200DF90FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1E3264F71E97DEF300DF90FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1E3264F91E97DEF300DF90FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1E3264FA1E97DEF300DF90FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1E3264FC1E97DEF300DF90FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E3264FF1E97DEF300DF90FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E3265011E97DEF300DF90FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3265061E97DEF300DF90FA /* JFFanYiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFFanYiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E32650A1E97DEF300DF90FA /* JFFanYiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFFanYiTests.m; sourceTree = "<group>"; };
+		1E32650C1E97DEF300DF90FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3265111E97DEF300DF90FA /* JFFanYiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFFanYiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3265151E97DEF300DF90FA /* JFFanYiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFFanYiUITests.m; sourceTree = "<group>"; };
+		1E3265171E97DEF300DF90FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3265231E98676500DF90FA /* FYIViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYIViewManager.h; sourceTree = "<group>"; };
+		1E3265241E98676500DF90FA /* FYIViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYIViewManager.m; sourceTree = "<group>"; };
+		1E3265261E986B2700DF90FA /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		1E3265281E98A73F00DF90FA /* FYIServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYIServiceManager.h; sourceTree = "<group>"; };
+		1E3265291E98A73F00DF90FA /* FYIServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYIServiceManager.m; sourceTree = "<group>"; };
+		1ED27FE11E9BCD2400E2287F /* NSString+FYIHumpString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FYIHumpString.h"; sourceTree = "<group>"; };
+		1ED27FE21E9BCD2400E2287F /* NSString+FYIHumpString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FYIHumpString.m"; sourceTree = "<group>"; };
+		504153C5BACB3B586B2B3230 /* Pods-JFFanYi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFFanYi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFFanYi/Pods-JFFanYi.debug.xcconfig"; sourceTree = "<group>"; };
+		5A046387C9085DD950A3AB45 /* libPods-JFFanYi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFFanYi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98AF0BFD60AF56D72F3FF996 /* Pods-JFFanYi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFFanYi.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFFanYi/Pods-JFFanYi.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E3264ED1E97DEF200DF90FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A70E2009D09D47D5703603 /* libPods-JFFanYi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3265031E97DEF300DF90FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E32650E1E97DEF300DF90FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E3264E71E97DEF200DF90FA = {
+			isa = PBXGroup;
+			children = (
+				1E3265261E986B2700DF90FA /* PodFile */,
+				1E3264F21E97DEF200DF90FA /* JFFanYi */,
+				1E3265091E97DEF300DF90FA /* JFFanYiTests */,
+				1E3265141E97DEF300DF90FA /* JFFanYiUITests */,
+				1E3264F11E97DEF200DF90FA /* Products */,
+				A9C6CF0DCC466BBD46A30ABB /* Pods */,
+				B5795F744EA8D3160E45A5DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E3264F11E97DEF200DF90FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E3264F01E97DEF200DF90FA /* JFFanYi.app */,
+				1E3265061E97DEF300DF90FA /* JFFanYiTests.xctest */,
+				1E3265111E97DEF300DF90FA /* JFFanYiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E3264F21E97DEF200DF90FA /* JFFanYi */ = {
+			isa = PBXGroup;
+			children = (
+				1E3264F31E97DEF200DF90FA /* AppDelegate.h */,
+				1E3264F41E97DEF200DF90FA /* AppDelegate.m */,
+				1E3264F91E97DEF300DF90FA /* ViewController.h */,
+				1E3264FA1E97DEF300DF90FA /* ViewController.m */,
+				1E3265231E98676500DF90FA /* FYIViewManager.h */,
+				1E3265241E98676500DF90FA /* FYIViewManager.m */,
+				1E3265281E98A73F00DF90FA /* FYIServiceManager.h */,
+				1E3265291E98A73F00DF90FA /* FYIServiceManager.m */,
+				1ED27FE11E9BCD2400E2287F /* NSString+FYIHumpString.h */,
+				1ED27FE21E9BCD2400E2287F /* NSString+FYIHumpString.m */,
+				1E3264FC1E97DEF300DF90FA /* Assets.xcassets */,
+				1E3264FE1E97DEF300DF90FA /* Main.storyboard */,
+				1E3265011E97DEF300DF90FA /* Info.plist */,
+				1E3264F61E97DEF200DF90FA /* Supporting Files */,
+			);
+			path = JFFanYi;
+			sourceTree = "<group>";
+		};
+		1E3264F61E97DEF200DF90FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E3264F71E97DEF300DF90FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E3265091E97DEF300DF90FA /* JFFanYiTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E32650A1E97DEF300DF90FA /* JFFanYiTests.m */,
+				1E32650C1E97DEF300DF90FA /* Info.plist */,
+			);
+			path = JFFanYiTests;
+			sourceTree = "<group>";
+		};
+		1E3265141E97DEF300DF90FA /* JFFanYiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E3265151E97DEF300DF90FA /* JFFanYiUITests.m */,
+				1E3265171E97DEF300DF90FA /* Info.plist */,
+			);
+			path = JFFanYiUITests;
+			sourceTree = "<group>";
+		};
+		A9C6CF0DCC466BBD46A30ABB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				504153C5BACB3B586B2B3230 /* Pods-JFFanYi.debug.xcconfig */,
+				98AF0BFD60AF56D72F3FF996 /* Pods-JFFanYi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5795F744EA8D3160E45A5DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A046387C9085DD950A3AB45 /* libPods-JFFanYi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E3264EF1E97DEF200DF90FA /* JFFanYi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E32651A1E97DEF300DF90FA /* Build configuration list for PBXNativeTarget "JFFanYi" */;
+			buildPhases = (
+				4527109C4ECE6DA520D83777 /* [CP] Check Pods Manifest.lock */,
+				1E3264EC1E97DEF200DF90FA /* Sources */,
+				1E3264ED1E97DEF200DF90FA /* Frameworks */,
+				1E3264EE1E97DEF200DF90FA /* Resources */,
+				222281B43F817A06ABF3DFF2 /* [CP] Embed Pods Frameworks */,
+				74E6B789112693BC094F22BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JFFanYi;
+			productName = JFFanYi;
+			productReference = 1E3264F01E97DEF200DF90FA /* JFFanYi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E3265051E97DEF300DF90FA /* JFFanYiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E32651D1E97DEF300DF90FA /* Build configuration list for PBXNativeTarget "JFFanYiTests" */;
+			buildPhases = (
+				1E3265021E97DEF300DF90FA /* Sources */,
+				1E3265031E97DEF300DF90FA /* Frameworks */,
+				1E3265041E97DEF300DF90FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E3265081E97DEF300DF90FA /* PBXTargetDependency */,
+			);
+			name = JFFanYiTests;
+			productName = JFFanYiTests;
+			productReference = 1E3265061E97DEF300DF90FA /* JFFanYiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E3265101E97DEF300DF90FA /* JFFanYiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E3265201E97DEF300DF90FA /* Build configuration list for PBXNativeTarget "JFFanYiUITests" */;
+			buildPhases = (
+				1E32650D1E97DEF300DF90FA /* Sources */,
+				1E32650E1E97DEF300DF90FA /* Frameworks */,
+				1E32650F1E97DEF300DF90FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E3265131E97DEF300DF90FA /* PBXTargetDependency */,
+			);
+			name = JFFanYiUITests;
+			productName = JFFanYiUITests;
+			productReference = 1E3265111E97DEF300DF90FA /* JFFanYiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E3264E81E97DEF200DF90FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FYI;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = zhifenx;
+				TargetAttributes = {
+					1E3264EF1E97DEF200DF90FA = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = PPTSL8JL9D;
+						ProvisioningStyle = Automatic;
+					};
+					1E3265051E97DEF300DF90FA = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = PPTSL8JL9D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1E3264EF1E97DEF200DF90FA;
+					};
+					1E3265101E97DEF300DF90FA = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = PPTSL8JL9D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1E3264EF1E97DEF200DF90FA;
+					};
+				};
+			};
+			buildConfigurationList = 1E3264EB1E97DEF200DF90FA /* Build configuration list for PBXProject "JFFanYi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E3264E71E97DEF200DF90FA;
+			productRefGroup = 1E3264F11E97DEF200DF90FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E3264EF1E97DEF200DF90FA /* JFFanYi */,
+				1E3265051E97DEF300DF90FA /* JFFanYiTests */,
+				1E3265101E97DEF300DF90FA /* JFFanYiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E3264EE1E97DEF200DF90FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3265271E986B2700DF90FA /* PodFile in Resources */,
+				1E3264FD1E97DEF300DF90FA /* Assets.xcassets in Resources */,
+				1E3265001E97DEF300DF90FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3265041E97DEF300DF90FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E32650F1E97DEF300DF90FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		222281B43F817A06ABF3DFF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFFanYi/Pods-JFFanYi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4527109C4ECE6DA520D83777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74E6B789112693BC094F22BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFFanYi/Pods-JFFanYi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E3264EC1E97DEF200DF90FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3264FB1E97DEF300DF90FA /* ViewController.m in Sources */,
+				1E3265251E98676500DF90FA /* FYIViewManager.m in Sources */,
+				1E32652A1E98A73F00DF90FA /* FYIServiceManager.m in Sources */,
+				1E3264F81E97DEF300DF90FA /* main.m in Sources */,
+				1E3264F51E97DEF200DF90FA /* AppDelegate.m in Sources */,
+				1ED27FE31E9BCD2400E2287F /* NSString+FYIHumpString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3265021E97DEF300DF90FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E32650B1E97DEF300DF90FA /* JFFanYiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E32650D1E97DEF300DF90FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3265161E97DEF300DF90FA /* JFFanYiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E3265081E97DEF300DF90FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E3264EF1E97DEF200DF90FA /* JFFanYi */;
+			targetProxy = 1E3265071E97DEF300DF90FA /* PBXContainerItemProxy */;
+		};
+		1E3265131E97DEF300DF90FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E3264EF1E97DEF200DF90FA /* JFFanYi */;
+			targetProxy = 1E3265121E97DEF300DF90FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E3264FE1E97DEF300DF90FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E3264FF1E97DEF300DF90FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E3265181E97DEF300DF90FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1E3265191E97DEF300DF90FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1E32651B1E97DEF300DF90FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504153C5BACB3B586B2B3230 /* Pods-JFFanYi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PPTSL8JL9D;
+				INFOPLIST_FILE = JFFanYi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhifenx.JFFanYi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E32651C1E97DEF300DF90FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98AF0BFD60AF56D72F3FF996 /* Pods-JFFanYi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PPTSL8JL9D;
+				INFOPLIST_FILE = JFFanYi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhifenx.JFFanYi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E32651E1E97DEF300DF90FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PPTSL8JL9D;
+				INFOPLIST_FILE = JFFanYiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhifenx.JFFanYiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFFanYi.app/Contents/MacOS/JFFanYi";
+			};
+			name = Debug;
+		};
+		1E32651F1E97DEF300DF90FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PPTSL8JL9D;
+				INFOPLIST_FILE = JFFanYiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhifenx.JFFanYiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFFanYi.app/Contents/MacOS/JFFanYi";
+			};
+			name = Release;
+		};
+		1E3265211E97DEF300DF90FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PPTSL8JL9D;
+				INFOPLIST_FILE = JFFanYiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhifenx.JFFanYiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JFFanYi;
+			};
+			name = Debug;
+		};
+		1E3265221E97DEF300DF90FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PPTSL8JL9D;
+				INFOPLIST_FILE = JFFanYiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhifenx.JFFanYiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JFFanYi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E3264EB1E97DEF200DF90FA /* Build configuration list for PBXProject "JFFanYi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3265181E97DEF300DF90FA /* Debug */,
+				1E3265191E97DEF300DF90FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E32651A1E97DEF300DF90FA /* Build configuration list for PBXNativeTarget "JFFanYi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E32651B1E97DEF300DF90FA /* Debug */,
+				1E32651C1E97DEF300DF90FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E32651D1E97DEF300DF90FA /* Build configuration list for PBXNativeTarget "JFFanYiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E32651E1E97DEF300DF90FA /* Debug */,
+				1E32651F1E97DEF300DF90FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E3265201E97DEF300DF90FA /* Build configuration list for PBXNativeTarget "JFFanYiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3265211E97DEF300DF90FA /* Debug */,
+				1E3265221E97DEF300DF90FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E3264E81E97DEF200DF90FA /* Project object */;
+}
