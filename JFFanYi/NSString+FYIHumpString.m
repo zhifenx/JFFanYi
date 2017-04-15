@@ -19,14 +19,13 @@
             if (index >= 2) {
                 string = [string stringByReplacingCharactersInRange:NSMakeRange(0, index - 1) withString:@""];
             }
-            NSLog(@"while resultString:%@",string);
             return string;
         }
     }
-    NSLog(@"resultString:%@",string);
     return string;
 }
 
+//驼峰格式转普通格式
 + (NSString *)humpStringToCommonString:(NSString *)string {
     if ([self isChinese:string]) {
         return string;
@@ -52,7 +51,7 @@
     return newString;
 }
 
-
+//普通格式转驼峰格式
 + (NSString *)commonStringToHumpString:(NSString *)string {
     if ([self isChinese:string]) {
         return string;
