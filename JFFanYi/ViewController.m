@@ -15,6 +15,10 @@
 @property (strong) IBOutlet NSTextView *inputTextView;
 @property (strong) IBOutlet NSScrollView *outputContentScrollView;
 @property (strong) IBOutlet NSTextView *outputTextView;
+@property (strong) IBOutlet NSButton *switchTranslationModeButton;
+@property (strong) IBOutlet NSButton *switchCopyModeButton;
+@property (strong) IBOutlet NSButton *clearButton;
+
 @end
 
 @implementation ViewController
@@ -27,7 +31,10 @@
     _viewManager = [[FYIViewManager alloc] initViewManagerWithInputScrollView:self.inputContentScrollView
                                                                 inputTextView:self.inputTextView
                                                              outputScrollView:self.outputContentScrollView
-                                                                  outTextView:self.outputTextView];
+                                                                  outTextView:self.outputTextView
+                                                  switchTranslationModeButton:self.switchTranslationModeButton
+                                                         switchCopyModeButton:self.switchCopyModeButton
+                                                                  clearButton:self.clearButton];
 }
 
 - (void)setRepresentedObject:(id)representedObject {

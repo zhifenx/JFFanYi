@@ -23,16 +23,25 @@
     NSScrollView *_outputScrollView;
     FYIServiceManager *_serviceManager;
     NSPasteboard *_pasteboard;
-    NSTextField *_outputPlaceholder;
+    NSButton *_switchTranslationModeButton;
+    NSButton *_switchCopyModeButton;
 }
 
-- (instancetype)initViewManagerWithInputScrollView:(NSScrollView *)inputScrollView inputTextView:(NSTextView *)inputTextView outputScrollView:(NSScrollView *)outputScrollView outTextView:(NSTextView *)outputTextView {
+- (instancetype)initViewManagerWithInputScrollView:(NSScrollView *)inputScrollView
+                                     inputTextView:(NSTextView *)inputTextView
+                                  outputScrollView:(NSScrollView *)outputScrollView
+                                       outTextView:(NSTextView *)outputTextView
+                       switchTranslationModeButton:(NSButton *)translationModeButton
+                              switchCopyModeButton:(NSButton *)copyModeButton
+                                       clearButton:(NSButton *)clearButton {
     if (self = [super init]) {
         _inputScrollView = inputScrollView;
         _outputScrollView = outputScrollView;
         self.inputTextView = inputTextView;
         self.outputTextView = outputTextView;
-    
+        _switchCopyModeButton = copyModeButton;
+        _switchTranslationModeButton = translationModeButton;
+
         _inputTextView.delegate = self;
         _outputTextView.delegate = self;
 
@@ -42,7 +51,9 @@
         [_inputTextView setTextColor:[NSColor blackColor]];
         
         _pasteboard = [NSPasteboard generalPasteboard];
-        _outputPlaceholder = [self addTextViewPlaceholderWithString:@"翻译结果可直接粘贴使用" textView:_outputTextView];
+        
+        [clearButton setTarget:self];
+        [clearButton setAction:@selector(clearContent:)];
     }
     return self;
 }
@@ -69,7 +80,13 @@
         if (text.length <= 0) {
             return;
         }
-        NSString *tempString = [NSString humpStringToCommonString:text];
+        NSString *tempString;
+        if (_switchTranslationModeButton.state) {
+            //驼峰转普通
+            tempString = [NSString humpStringToCommonString:text];
+        }else {
+            tempString = text;
+        }
         __weak typeof(self) weakSelf = self;
         [_serviceManager requestDataWithTextString:tempString
                                               data:^(id response) {
@@ -79,16 +96,21 @@
                                                   __strong typeof(self) strongSelf = weakSelf;
                                                   if (strongSelf) {
                                                       
-                                                      [strongSelf removePlaceholder:_outputPlaceholder];
-                                                      
                                                       [strongSelf.outputTextView.textStorage beginEditing];
-                                                      NSString *humpString = [NSString commonStringToHumpString:response[0]];
-                                                      NSMutableAttributedString * attrContent = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@",humpString]];
+                                                      NSString *result;
+                                                      if (_switchTranslationModeButton.state) {
+                                                          result = [NSString commonStringToHumpString:response[0]];
+                                                      }else {
+                                                          result = response[0];
+                                                      }
+                                                      NSMutableAttributedString * attrContent = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@",result]];
                                                       [strongSelf.outputTextView.textStorage setAttributedString:attrContent];
                                                       [strongSelf.outputTextView.textStorage setFont:[NSFont systemFontOfSize:14]];
                                                       [strongSelf.outputTextView.textStorage setForegroundColor:[NSColor redColor]];
                                                       [strongSelf.outputTextView.textStorage endEditing];
-                                                      [strongSelf writeDataToThePasteboardWithString:humpString];
+                                                      if (_switchCopyModeButton.state) {
+                                                          [strongSelf writeDataToThePasteboardWithString:result];
+                                                      }
                                                   }
         }];
     }
@@ -98,6 +120,12 @@
     [_pasteboard declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:self];
     [_pasteboard clearContents];
     [_pasteboard setString:data forType:NSStringPboardType];
+}
+
+- (void)clearContent:(NSButton *)sender {
+    NSMutableAttributedString * attrContent = [[NSMutableAttributedString alloc] initWithString:@""];
+    [_inputTextView.textStorage setAttributedString:attrContent];
+    [_outputTextView.textStorage setAttributedString:attrContent];
 }
 
 @end

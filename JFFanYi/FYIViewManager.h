@@ -11,5 +11,11 @@
 
 @interface FYIViewManager : NSObject
 
-- (instancetype)initViewManagerWithInputScrollView:(NSScrollView *)inputScrllView inputTextView:(NSTextView *)inputTextView outputScrollView:(NSScrollView *)outputScrllView outTextView:(NSTextView *)outputTextView;
+- (instancetype)initViewManagerWithInputScrollView:(NSScrollView *)inputScrllView
+                                     inputTextView:(NSTextView *)inputTextView
+                                  outputScrollView:(NSScrollView *)outputScrllView
+                                       outTextView:(NSTextView *)outputTextView
+                       switchTranslationModeButton:(NSButton *)translationModeButton
+                              switchCopyModeButton:(NSButton *)copyModeButton
+                                       clearButton:(NSButton *)clearButton;
 @end
